@@ -1,0 +1,145 @@
+{
+  "test_size": 61,
+  "targets": {
+    "Cath": {
+      "model": "RF",
+      "cv_auc": 0.926,
+      "test_metrics": {
+        "roc_auc": 0.8168,
+        "pr_auc": 0.9187,
+        "brier": 0.1494,
+        "accuracy": 0.8033,
+        "precision": 0.8478,
+        "recall": 0.8864,
+        "f1": 0.8667,
+        "threshold": 0.504,
+        "n_test": 61,
+        "n_positive": 44,
+        "n_negative": 17
+      },
+      "baselines": {
+        "majority_class": {
+          "accuracy": 0.7213,
+          "precision": 0.7213,
+          "recall": 1.0,
+          "f1": 0.8381,
+          "roc_auc": 0.5,
+          "strategy": "always predict 1"
+        },
+        "random_stratified": {
+          "accuracy": 0.7213,
+          "precision": 0.7213,
+          "recall": 0.7213,
+          "f1": 0.7213,
+          "roc_auc": 0.5,
+          "strategy": "random with p=0.72"
+        }
+      }
+    },
+    "LAD": {
+      "model": "RF",
+      "cv_auc": 0.8473,
+      "test_metrics": {
+        "roc_auc": 0.7356,
+        "pr_auc": 0.7981,
+        "brier": 0.2004,
+        "accuracy": 0.7377,
+        "precision": 0.7381,
+        "recall": 0.8611,
+        "f1": 0.7949,
+        "threshold": 0.437,
+        "n_test": 61,
+        "n_positive": 36,
+        "n_negative": 25
+      },
+      "baselines": {
+        "majority_class": {
+          "accuracy": 0.5902,
+          "precision": 0.5902,
+          "recall": 1.0,
+          "f1": 0.7423,
+          "roc_auc": 0.5,
+          "strategy": "always predict 1"
+        },
+        "random_stratified": {
+          "accuracy": 0.5902,
+          "precision": 0.5902,
+          "recall": 0.5902,
+          "f1": 0.5902,
+          "roc_auc": 0.5,
+          "strategy": "random with p=0.59"
+        }
+      }
+    },
+    "LCX": {
+      "model": "RF",
+      "cv_auc": 0.7258,
+      "test_metrics": {
+        "roc_auc": 0.7633,
+        "pr_auc": 0.6928,
+        "brier": 0.2006,
+        "accuracy": 0.7049,
+        "precision": 0.6129,
+        "recall": 0.76,
+        "f1": 0.6786,
+        "threshold": 0.384,
+        "n_test": 61,
+        "n_positive": 25,
+        "n_negative": 36
+      },
+      "baselines": {
+        "majority_class": {
+          "accuracy": 0.5902,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "roc_auc": 0.5,
+          "strategy": "always predict 0"
+        },
+        "random_stratified": {
+          "accuracy": 0.5902,
+          "precision": 0.4098,
+          "recall": 0.4098,
+          "f1": 0.4098,
+          "roc_auc": 0.5,
+          "strategy": "random with p=0.41"
+        }
+      }
+    },
+    "RCA": {
+      "model": "LR",
+      "cv_auc": 0.7234,
+      "test_metrics": {
+        "roc_auc": 0.738,
+        "pr_auc": 0.6774,
+        "brier": 0.1918,
+        "accuracy": 0.7049,
+        "precision": 0.5758,
+        "recall": 0.8261,
+        "f1": 0.6786,
+        "threshold": 0.346,
+        "n_test": 61,
+        "n_positive": 23,
+        "n_negative": 38
+      },
+      "baselines": {
+        "majority_class": {
+          "accuracy": 0.623,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "roc_auc": 0.5,
+          "strategy": "always predict 0"
+        },
+        "random_stratified": {
+          "accuracy": 0.623,
+          "precision": 0.377,
+          "recall": 0.377,
+          "f1": 0.377,
+          "roc_auc": 0.5,
+          "strategy": "random with p=0.38"
+        }
+      }
+    }
+  }
+}

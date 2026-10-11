@@ -1,0 +1,182 @@
+{
+  "Cath": {
+    "model_type": "RF",
+    "top_10_shap": [
+      {
+        "feature": "Typical Chest Pain",
+        "mean_abs_shap": 0.0946
+      },
+      {
+        "feature": "Atypical",
+        "mean_abs_shap": 0.0635
+      },
+      {
+        "feature": "Age",
+        "mean_abs_shap": 0.0368
+      },
+      {
+        "feature": "EF-TTE",
+        "mean_abs_shap": 0.0251
+      },
+      {
+        "feature": "BP",
+        "mean_abs_shap": 0.0237
+      },
+      {
+        "feature": "ESR",
+        "mean_abs_shap": 0.0215
+      },
+      {
+        "feature": "HTN",
+        "mean_abs_shap": 0.0192
+      },
+      {
+        "feature": "LDL",
+        "mean_abs_shap": 0.0144
+      },
+      {
+        "feature": "TG",
+        "mean_abs_shap": 0.0134
+      },
+      {
+        "feature": "BMI",
+        "mean_abs_shap": 0.0114
+      }
+    ]
+  },
+  "LAD": {
+    "model_type": "RF",
+    "top_10_shap": [
+      {
+        "feature": "Typical Chest Pain",
+        "mean_abs_shap": 0.0731
+      },
+      {
+        "feature": "EF-TTE",
+        "mean_abs_shap": 0.0489
+      },
+      {
+        "feature": "Atypical",
+        "mean_abs_shap": 0.0468
+      },
+      {
+        "feature": "Age",
+        "mean_abs_shap": 0.0409
+      },
+      {
+        "feature": "ESR",
+        "mean_abs_shap": 0.0348
+      },
+      {
+        "feature": "BP",
+        "mean_abs_shap": 0.0152
+      },
+      {
+        "feature": "TG",
+        "mean_abs_shap": 0.0148
+      },
+      {
+        "feature": "Lymph",
+        "mean_abs_shap": 0.012
+      },
+      {
+        "feature": "HTN",
+        "mean_abs_shap": 0.011
+      },
+      {
+        "feature": "Tinversion",
+        "mean_abs_shap": 0.0109
+      }
+    ]
+  },
+  "LCX": {
+    "model_type": "RF",
+    "top_10_shap": [
+      {
+        "feature": "Age",
+        "mean_abs_shap": 0.0347
+      },
+      {
+        "feature": "TG",
+        "mean_abs_shap": 0.0305
+      },
+      {
+        "feature": "ESR",
+        "mean_abs_shap": 0.0216
+      },
+      {
+        "feature": "Typical Chest Pain",
+        "mean_abs_shap": 0.021
+      },
+      {
+        "feature": "Neut",
+        "mean_abs_shap": 0.0201
+      },
+      {
+        "feature": "Atypical",
+        "mean_abs_shap": 0.0201
+      },
+      {
+        "feature": "HB",
+        "mean_abs_shap": 0.0185
+      },
+      {
+        "feature": "PLT",
+        "mean_abs_shap": 0.0184
+      },
+      {
+        "feature": "FBS",
+        "mean_abs_shap": 0.0161
+      },
+      {
+        "feature": "Lymph",
+        "mean_abs_shap": 0.0149
+      }
+    ]
+  },
+  "RCA": {
+    "model_type": "LR",
+    "top_10_shap": [
+      {
+        "feature": "Age",
+        "mean_abs_shap": 0.2797
+      },
+      {
+        "feature": "ESR",
+        "mean_abs_shap": 0.2447
+      },
+      {
+        "feature": "Typical Chest Pain",
+        "mean_abs_shap": 0.1921
+      },
+      {
+        "feature": "CR",
+        "mean_abs_shap": 0.1876
+      },
+      {
+        "feature": "TG",
+        "mean_abs_shap": 0.1536
+      },
+      {
+        "feature": "Sex",
+        "mean_abs_shap": 0.1507
+      },
+      {
+        "feature": "HDL",
+        "mean_abs_shap": 0.1436
+      },
+      {
+        "feature": "Function Class",
+        "mean_abs_shap": 0.1407
+      },
+      {
+        "feature": "BUN",
+        "mean_abs_shap": 0.14
+      },
+      {
+        "feature": "PR",
+        "mean_abs_shap": 0.1309
+      }
+    ]
+  }
+}

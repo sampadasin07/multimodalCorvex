@@ -1,0 +1,297 @@
+{
+  "predictions": {
+    "CAD": {
+      "probability": 0.3005,
+      "risk_level": "low",
+      "positive": false,
+      "threshold": 0.504,
+      "model": "RF"
+    },
+    "LAD": {
+      "probability": 0.1214,
+      "risk_level": "low",
+      "positive": false,
+      "threshold": 0.437,
+      "model": "RF"
+    },
+    "LCX": {
+      "probability": 0.1793,
+      "risk_level": "low",
+      "positive": false,
+      "threshold": 0.384,
+      "model": "RF"
+    },
+    "RCA": {
+      "probability": 0.2076,
+      "risk_level": "low",
+      "positive": false,
+      "threshold": 0.346,
+      "model": "LR"
+    }
+  },
+  "overall_risk": "low",
+  "feature_values": {
+    "Age": 50,
+    "Sex": 1,
+    "BMI": 26.0,
+    "DM": 0,
+    "HTN": 0,
+    "Current Smoker": 0,
+    "EX-Smoker": 0,
+    "FH": 0,
+    "Obesity": 1,
+    "CRF": 0,
+    "CVA": 0,
+    "Airway disease": 0,
+    "Thyroid Disease": 0,
+    "CHF": 0,
+    "DLP": 0,
+    "BP": 125,
+    "PR": 70.0,
+    "Edema": 0,
+    "Weak Peripheral Pulse": 0,
+    "Lung rales": 0,
+    "Systolic Murmur": 0,
+    "Diastolic Murmur": 0,
+    "Typical Chest Pain": 0,
+    "Dyspnea": 0,
+    "Function Class": 0.0,
+    "Atypical": 0,
+    "Nonanginal": 1,
+    "LowTH Ang": 0,
+    "Q Wave": 0,
+    "St Elevation": 0,
+    "St Depression": 0,
+    "Tinversion": 0,
+    "LVH": 0,
+    "Poor R Progression": 0,
+    "BBB": "N",
+    "FBS": 100,
+    "CR": 1.0,
+    "TG": 119.0,
+    "LDL": 100.0,
+    "HDL": 39.0,
+    "BUN": 16.0,
+    "ESR": 15.0,
+    "HB": 13.3,
+    "K": 4.2,
+    "Na": 141.0,
+    "WBC": 7150.0,
+    "Lymph": 32.0,
+    "Neut": 60.0,
+    "PLT": 208.0,
+    "EF-TTE": 55,
+    "Region RWMA": 0,
+    "VHD": "N"
+  },
+  "shap_contributions": {
+    "CAD": [
+      {
+        "feature": "Typical Chest Pain",
+        "shap_value": -0.0867,
+        "direction": "protective"
+      },
+      {
+        "feature": "Atypical",
+        "shap_value": 0.0707,
+        "direction": "risk"
+      },
+      {
+        "feature": "Age",
+        "shap_value": -0.0447,
+        "direction": "protective"
+      },
+      {
+        "feature": "EF-TTE",
+        "shap_value": -0.0268,
+        "direction": "protective"
+      },
+      {
+        "feature": "HTN",
+        "shap_value": -0.0175,
+        "direction": "protective"
+      },
+      {
+        "feature": "BP",
+        "shap_value": 0.0118,
+        "direction": "risk"
+      },
+      {
+        "feature": "TG",
+        "shap_value": 0.008,
+        "direction": "risk"
+      },
+      {
+        "feature": "LDL",
+        "shap_value": -0.0079,
+        "direction": "protective"
+      },
+      {
+        "feature": "HDL",
+        "shap_value": 0.0077,
+        "direction": "risk"
+      },
+      {
+        "feature": "Lymph",
+        "shap_value": -0.0074,
+        "direction": "protective"
+      }
+    ],
+    "LAD": [
+      {
+        "feature": "Typical Chest Pain",
+        "shap_value": -0.0849,
+        "direction": "protective"
+      },
+      {
+        "feature": "EF-TTE",
+        "shap_value": -0.0671,
+        "direction": "protective"
+      },
+      {
+        "feature": "Age",
+        "shap_value": -0.0544,
+        "direction": "protective"
+      },
+      {
+        "feature": "Atypical",
+        "shap_value": 0.0486,
+        "direction": "risk"
+      },
+      {
+        "feature": "ESR",
+        "shap_value": -0.0114,
+        "direction": "protective"
+      },
+      {
+        "feature": "Tinversion",
+        "shap_value": -0.0097,
+        "direction": "protective"
+      },
+      {
+        "feature": "HB",
+        "shap_value": -0.0092,
+        "direction": "protective"
+      },
+      {
+        "feature": "HTN",
+        "shap_value": -0.0085,
+        "direction": "protective"
+      },
+      {
+        "feature": "Lymph",
+        "shap_value": -0.0072,
+        "direction": "protective"
+      },
+      {
+        "feature": "Na",
+        "shap_value": -0.0066,
+        "direction": "protective"
+      }
+    ],
+    "LCX": [
+      {
+        "feature": "Age",
+        "shap_value": -0.0517,
+        "direction": "protective"
+      },
+      {
+        "feature": "Typical Chest Pain",
+        "shap_value": -0.0349,
+        "direction": "protective"
+      },
+      {
+        "feature": "HB",
+        "shap_value": -0.0313,
+        "direction": "protective"
+      },
+      {
+        "feature": "Atypical",
+        "shap_value": 0.0214,
+        "direction": "risk"
+      },
+      {
+        "feature": "CR",
+        "shap_value": -0.0149,
+        "direction": "protective"
+      },
+      {
+        "feature": "VHD_ordinal",
+        "shap_value": 0.0141,
+        "direction": "risk"
+      },
+      {
+        "feature": "PR",
+        "shap_value": -0.0138,
+        "direction": "protective"
+      },
+      {
+        "feature": "WBC",
+        "shap_value": -0.0134,
+        "direction": "protective"
+      },
+      {
+        "feature": "HDL",
+        "shap_value": 0.0124,
+        "direction": "risk"
+      },
+      {
+        "feature": "EF-TTE",
+        "shap_value": -0.0111,
+        "direction": "protective"
+      }
+    ],
+    "RCA": [
+      {
+        "feature": "RWMA_4",
+        "shap_value": -0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "RWMA_3",
+        "shap_value": -0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "RWMA_2",
+        "shap_value": -0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "RWMA_1",
+        "shap_value": -0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "VHD_ordinal",
+        "shap_value": 0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "BBB_RBBB",
+        "shap_value": -0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "BBB_LBBB",
+        "shap_value": -0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "Poor R Progression",
+        "shap_value": 0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "LVH",
+        "shap_value": -0.0,
+        "direction": "protective"
+      },
+      {
+        "feature": "Tinversion",
+        "shap_value": 0.0,
+        "direction": "protective"
+      }
+    ]
+  }
+}
