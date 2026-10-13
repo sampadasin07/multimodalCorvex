@@ -1,4 +1,5 @@
 import json
+import os
 import logging
 import time
 from contextlib import asynccontextmanager
@@ -29,9 +30,10 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="CardioRisk API", version="0.1.0", lifespan=lifespan)
 
 # Lets the frontend (a different port) call this API
+origins = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],    # fine for a hackathon; tighten later
+    allow_origins=origins,    # fine for a hackathon; tighten later
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -288,4 +290,4 @@ def complete_assessment(assessment_id: str, payload: AssessmentCompleteRequest):
             model_version=payload.model_version or "1.0",
         )
     except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        raise HTTPException(status_code=400, detail=str(e))

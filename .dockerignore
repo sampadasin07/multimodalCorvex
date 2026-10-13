@@ -1,0 +1,6 @@
+.venv
+frontend
+.git
+.env
+*.db
+ml/notebooks
